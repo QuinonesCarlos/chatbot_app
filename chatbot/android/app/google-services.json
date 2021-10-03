@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "157396342751",
+    "project_id": "check-5d840",
+    "storage_bucket": "check-5d840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157396342751:android:df06b90ef332a2a448d66a",
+        "android_client_info": {
+          "package_name": "biz.planck.check"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157396342751-i9l2tu08crc9bt2124ecetk7iavgos1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_RP28sr7V0WA5tz5_rWpFzLo-322BxyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157396342751-i9l2tu08crc9bt2124ecetk7iavgos1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
