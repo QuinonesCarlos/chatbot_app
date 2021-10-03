@@ -88,7 +88,7 @@ class _RegistrarPageState extends State<RegistrarPage>
               children: <Widget>[
                 Container(
                     child: Image(
-                        image: AssetImage('assets/icon_.png'), width: 120.0)),
+                        image: AssetImage('assets/chatbot.png'), width: 120.0)),
                 SizedBox(height: 40.0),
                 Row(
                   children: [
@@ -176,19 +176,40 @@ class _RegistrarPageState extends State<RegistrarPage>
                   ],
                 ),
                 btn.booton('REGISTRARSE', _registrar),
-                SizedBox(height: 10.0),
-                Center(child: Text('- O -')),
+                // SizedBox(height: 10.0),
+                // Center(child: Text('- O -')),
+                // SizedBox(height: 20.0),
+                // Sistema.isWeb
+                //     ? Container()
+                //     : Row(
+                //         crossAxisAlignment: CrossAxisAlignment.center,
+                //         mainAxisAlignment: MainAxisAlignment.center,
+                //         children: [
+                //           rs.buttonGoogle('Continuar con Google',
+                //               prs.iconoGoogle, _iniciarSessionGoogle),
+                //         ],
+                //       ),
                 SizedBox(height: 20.0),
-                Sistema.isWeb
-                    ? Container()
-                    : Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          rs.buttonGoogle('Continuar con Google',
-                              prs.iconoGoogle, _iniciarSessionGoogle),
-                        ],
-                      ),
+                Visibility(
+                  // visible: Sistema.isIOS,
+                  child: TextButton(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text('Regresar',
+                            style: TextStyle(color: Colors.indigo)),
+                      ],
+                    ),
+                    onPressed: () async {
+                      _saving = true;
+                      setState(() {});
+                      await rs.autlogin(context);
+                      _saving = false;
+                      setState(() {});
+                    },
+                  ),
+                ),
                 SizedBox(height: 20.0),
               ],
             )),

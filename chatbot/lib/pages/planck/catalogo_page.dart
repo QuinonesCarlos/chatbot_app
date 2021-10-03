@@ -142,7 +142,7 @@ class _CatalogoPageState extends State<CatalogoPage>
   _items() {
     List<BottomNavigationBarItem> boton = [];
     boton.add(BottomNavigationBarItem(
-        icon: Icon(FontAwesomeIcons.whatsapp), label: 'WhatsAppS'));
+        icon: Icon(FontAwesomeIcons.whatsapp), label: 'Inicio'));
     boton.add(BottomNavigationBarItem(
         icon: Icon(FontAwesomeIcons.addressCard), label: 'Campañas'));
     return boton;
@@ -160,7 +160,7 @@ class _CatalogoPageState extends State<CatalogoPage>
     setState(() {});
     switch (index) {
       case 0:
-        title = 'WhatsAppS';
+        title = 'Chatbot';
         await _whatsappBloc.listar(fecha);
         break;
       case 1:
@@ -191,8 +191,8 @@ class _CatalogoPageState extends State<CatalogoPage>
         Expanded(child: _tabCatalogo()),
         Visibility(
             visible: _selectedIndex == 0,
-            child: btn.bootonIcon('REGISTRAR NUEVO WHATSSAP',
-                Icon(Icons.qr_code), _registrarWhatssApp))
+            child: btn.bootonIcon(
+                'INGRESAR', Icon(Icons.qr_code), _registrarWhatssApp))
       ],
     );
   }
@@ -268,8 +268,8 @@ class _CatalogoPageState extends State<CatalogoPage>
               height: double.infinity,
               child: Center(
                 child: Image(
-                    image: AssetImage('assets/icon_.png'),
-                    width: 120.0,
+                    image: AssetImage('assets/chatbot.png'),
+                    width: 220.0,
                     fit: BoxFit.cover),
               ),
             );

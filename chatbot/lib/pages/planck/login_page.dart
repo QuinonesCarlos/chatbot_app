@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
             children: <Widget>[
               Container(
                   child: Image(
-                      image: AssetImage('assets/icon_.png'), width: 120.0)),
+                      image: AssetImage('assets/chatbot.png'), width: 120.0)),
               SizedBox(height: 40.0),
               Row(
                 children: [
@@ -138,19 +138,19 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 onPressed: () => Navigator.pushNamed(context, 'contrasenia'),
               ),
-              SizedBox(height: 10.0),
-              Center(child: Text('- O -')),
-              SizedBox(height: 20.0),
-              Sistema.isWeb
-                  ? Container()
-                  : Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        rs.buttonGoogle('Continuar con Google', prs.iconoGoogle,
-                            _iniciarSessionGoogle),
-                      ],
-                    ),
+              // SizedBox(height: 10.0),
+              // Center(child: Text('- O -')),
+              // SizedBox(height: 20.0),
+              // Sistema.isWeb
+              //     ? Container()
+              //     : Row(
+              //         crossAxisAlignment: CrossAxisAlignment.center,
+              //         mainAxisAlignment: MainAxisAlignment.center,
+              //         children: [
+              //           rs.buttonGoogle('Continuar con Google', prs.iconoGoogle,
+              //               _iniciarSessionGoogle),
+              //         ],
+              //       ),
               SizedBox(height: 20.0),
               Visibility(
                 // visible: Sistema.isIOS,
@@ -159,8 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text('¡EXPLORAR ${Sistema.aplicativo}!',
-                          style: TextStyle(color: Colors.indigo)),
+                      Text('Regresar', style: TextStyle(color: Colors.indigo)),
                     ],
                   ),
                   onPressed: () async {

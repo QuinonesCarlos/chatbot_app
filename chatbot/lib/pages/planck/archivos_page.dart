@@ -94,7 +94,7 @@ class _ArchivosPageState extends State<ArchivosPage> {
               height: double.infinity,
               child: Center(
                 child: Image(
-                  image: AssetImage('assets/icon_.png'),
+                  image: AssetImage('assets/chatbot.png'),
                   fit: BoxFit.cover,
                 ),
               ),

@@ -33,8 +33,8 @@ class _AboutPageState extends State<AboutPage> {
     return Column(
       children: <Widget>[
         Expanded(child: SingleChildScrollView(child: _contenido())),
-        btn.confirmar('POWERED BY PLANCK', () {
-          _launchURL('https://www.planck.biz/');
+        btn.confirmar('App by TicOSolutions', () {
+          _launchURL('https://ticosolutionsofficialdgo.000webhostapp.com/');
         }),
       ],
     );
@@ -49,11 +49,11 @@ class _AboutPageState extends State<AboutPage> {
             children: <Widget>[
               SizedBox(height: 35.0),
               Image(
-                  image: AssetImage('assets/icon_.png'),
-                  width: 120.0,
+                  image: AssetImage('assets/chatbot.png'),
+                  width: 220.0,
                   fit: BoxFit.cover),
               SizedBox(height: 40.0),
-              Text('${Sistema.aplicativoTitle}', textAlign: TextAlign.center),
+              // Text('${Sistema.aplicativoTitle}', textAlign: TextAlign.center),
               SizedBox(height: 20.0),
               Text('', textAlign: TextAlign.center),
               SizedBox(height: 20.0),
