@@ -47,7 +47,7 @@ class _CatalogoPageState extends State<CatalogoPage>
   DateTime _focusedDay = DateTime.now();
 
   bool _saving = false;
-  String title = 'WhatsAppS';
+  String title = 'Chatbot';
   int _selectedIndex = 0;
 
   late TextEditingController textControllerIp;

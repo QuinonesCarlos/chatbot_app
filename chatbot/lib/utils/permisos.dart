@@ -24,8 +24,8 @@ Future<ClienteModel> ingresar() async {
   clienteModel.img =
       'https://image.freepik.com/vector-gratis/asociacion-afiliados-ganar-dinero-estrategia-mercadeo_115790-146.jpg';
   clienteModel.idCliente = prefs.idCliente;
-  clienteModel.correo = 'explorar@${Sistema.aplicativoTitle.toLowerCase()}.com';
-  clienteModel.nombres = 'Invitado ${Sistema.aplicativoTitle}';
+  clienteModel.correo = 'invitado@ticosolutions.com';
+  clienteModel.nombres = 'Invitado TicOsolutions';
   prefs.clienteModel = clienteModel;
   return clienteModel;
 }

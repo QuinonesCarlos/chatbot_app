@@ -33,8 +33,8 @@ class _AboutPageState extends State<AboutPage> {
     return Column(
       children: <Widget>[
         Expanded(child: SingleChildScrollView(child: _contenido())),
-        btn.confirmar('App by TicOSolutions', () {
-          _launchURL('https://ticosolutionsofficialdgo.000webhostapp.com/');
+        btn.confirmar('Contacto', () {
+          _launchURL('https://ticosolutionsofficialdgo.000webhostapp.com/#contacto');
         }),
       ],
     );
@@ -68,11 +68,11 @@ class _AboutPageState extends State<AboutPage> {
   }
 
   _politicas() {
-    _launchURL('https://www.planck.biz/politica-de-privacidad');
+    _launchURL('https://drive.google.com/file/d/1GWniM8k4lKOj9CN74-kYfUucY5xOa1Tm/view?usp=sharing');
   }
 
   _terminos() {
-    _launchURL('https://www.planck.biz/terminos-y-condiciones');
+    _launchURL('https://drive.google.com/file/d/1yq_NKj1EV53UeNLBdTCdFkCSM2v4zRld/view?usp=sharing');
   }
 
   _launchURL(url) async {

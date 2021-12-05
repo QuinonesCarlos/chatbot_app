@@ -92,8 +92,7 @@ class _MenuWidgetState extends State<MenuWidget> {
         ),
         Divider(),
         SizedBox(height: 4),
-        Text('V: ${utils.headers['vs']} Powered by Planck',
-            textScaleFactor: 0.8),
+        Text('TicOSolutions', textScaleFactor: 0.8),
         SizedBox(height: 10),
       ],
     );
